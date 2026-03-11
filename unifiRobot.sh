@@ -5,7 +5,7 @@
 
 cd /data/
 # Grab the cronjob check
-curl https://raw.githubusercontent.com/SCScripting/Unifi-Heartbeat-Cronjob-Script/refs/heads/main/25-add-cron-jobs.sh
+curl https://raw.githubusercontent.com/SCScripting/Unifi-Heartbeat-Cronjob-Script/refs/heads/main/25-add-cron-jobs.sh --output 25-add-cron-jobs.sh
 echo "Enter Heartbeat: "
 read heartbeat
 
