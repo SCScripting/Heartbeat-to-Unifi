@@ -16,7 +16,7 @@ echo "Enter Heartbeat: "
 read heartbeat
 
 # Creates the unique heartbeat cURL for the cronjob
-cat << 'EOF' > /cronjobs/healthchecksio
+cat << 'EOF' > /data/cronjobs/healthchecksio
 * * * * * root curl -fsL "$heartbeat" >/dev/null 2>&1
 EOF
 
